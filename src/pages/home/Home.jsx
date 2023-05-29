@@ -1,10 +1,7 @@
 import "./home.css";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import { RiDoubleQuotesL } from "react-icons/ri";
-import { getHome } from "../../utils/api/homeApi";
-import ShowImage from "../../utils/data/showImage";
-import IconImage from "../../utils/data/iconImage";
 import Laura from "../../resources/images/review1.jpeg";
 import Person2 from "../../resources/images/sidi.jpg";
 import Person3 from "../../resources/images/review3.jpeg";
@@ -12,19 +9,10 @@ import Socket2 from "../../resources/images/contact.png";
 import { useForm } from "@formspree/react";
 import { Button, Form, Input, DatePicker, Rate, Select } from "antd";
 const { TextArea } = Input;
-const { Option, OptGroup } = Select;
 
 const Home = () => {
-  const [state, setState] = useState({
-    homes: [],
-    error: null,
-  });
   const [states, handleSubmit] = useForm("xayzvadn");
   const navigate = useNavigate();
-
-  useEffect(() => {
-    fetchHomes();
-  }, []);
 
   if (states.succeeded) {
     return (
@@ -40,13 +28,6 @@ const Home = () => {
   }
   const handleChange = (value) => {
     console.log(`selected ${value}`);
-  };
-
-  const fetchHomes = () => {
-    setState({ ...state, error: null });
-    getHome()
-      .then(({ data }) => setState({ ...state, homes: data, error: null }))
-      .catch({ ...state, error: null });
   };
 
   return (
@@ -78,19 +59,13 @@ const Home = () => {
               <h1>We Providing Helpful Services</h1>
             </div>
             <div className="service-grid">
-              {state?.homes?.map((h) => {
-                return (
-                  <>
-                    <div className="details topMargin">
-                      <ShowImage services={h?.image} url="uploads" />
-                      <div className="details-info">
-                        <IconImage services={h?.icon} url="uploads" />
-                        <h2>{h?.title}</h2>
-                      </div>
-                    </div>
-                  </>
-                );
-              })}
+              <div className="details topMargin">
+                {/* <ShowImage services={h?.image} url="uploads" /> */}
+                <div className="details-info">
+                  {/* <IconImage services={h?.icon} url="uploads" /> */}
+                  {/* <h2>{h?.title}</h2> */}
+                </div>
+              </div>
             </div>
           </div>
 

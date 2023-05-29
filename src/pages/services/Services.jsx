@@ -2,11 +2,11 @@ import "./services.css";
 import React, { useState, useEffect } from "react";
 import { getServices } from "../../utils/api/serviceApi";
 import ShowService from "../../utils/data/showService";
-import Service1 from "../../resources/images/service1.png";
-import Service2 from "../../resources/images/frepair.jpg";
-import Service3 from "../../resources/images/prepair.jpg";
-import Service4 from "../../resources/images/service4.png";
-import Service5 from "../../resources/images/service5.png";
+import Service1 from "../../extra/cinema.png";
+import Service2 from "../../extra/photo.jpg";
+import Service3 from "../../extra/short reels.png";
+import Service4 from "../../extra/wed-2.jpg";
+import Service5 from "../../extra/serial.jpeg";
 
 const Services = () => {
   const [state, setState] = useState({
@@ -34,17 +34,21 @@ const Services = () => {
               Best <span className="span">Serving</span> Industry
             </h1>
             <h2>
-              In <span className="span">Context</span> Of Pokhara
+              In <span className="span">Context</span> Of Nepal
             </h2>
             <p>
-              Everything related to electrical system failure problem can be
-              fixed by us and the charge is also affordable according to the
-              repairings. We offer our services all over Pokhara.
+              - All Kind of Photography (Wedding, Potraits, Portfolio Etc....).
             </p>
+            <p>
+              - All Kind of Videography (Wedding, Short movie, Music video,
+              Documentary, Advertisement, Other Programs & Many more.
+            </p>
+            {/* <p>- Event Management</p>
+            <p>- Video Editing, Graphics, Animations & Many more ...</p> */}
           </div>
           <div className="service-card" id="rr">
             <img src={Service1} alt="s1" />
-            <h4>Wiring Check up</h4>
+            <h4>Cinema</h4>
           </div>
           <div
             style={{
@@ -53,7 +57,7 @@ const Services = () => {
             className="service-card"
           >
             <img src={Service2} alt="s1" />
-            <h4>Fridge Repair</h4>
+            <h4>Photography</h4>
           </div>
         </div>
 
@@ -65,7 +69,7 @@ const Services = () => {
         >
           <div className="service-card" id="rr">
             <img src={Service3} alt="s1" />
-            <h4>Phone Repair</h4>
+            <h4>Short Reels</h4>
           </div>
           <div
             style={{
@@ -74,7 +78,7 @@ const Services = () => {
             className="service-card"
           >
             <img src={Service4} alt="s1" />
-            <h4>Television Repair</h4>
+            <h4>Marriage Package</h4>
           </div>
           <div
             style={{
@@ -83,7 +87,7 @@ const Services = () => {
             className="service-card"
           >
             <img src={Service5} alt="s1" />
-            <h4>Fan Repair</h4>
+            <h4>TV Serial Shooting</h4>
           </div>
         </div>
         <div className="heading">

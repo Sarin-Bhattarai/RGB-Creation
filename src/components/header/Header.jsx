@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../../resources/images/logo.png";
+import logo from "../../resources/images/loogo.png";
 import { Link } from "react-router-dom";
 import "./header.css";
 import { MdOutlineMenu, MdOutlineClose } from "react-icons/md";
@@ -59,7 +59,7 @@ const Header = () => {
                 marginTop: "-4px",
               }}
             >
-              - 9856038173
+              - 9849748835
             </h2>
           </div>
         </div>

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { MdFacebook } from "react-icons/md";
 import { FaTiktok } from "react-icons/fa";
 import { AiOutlineWhatsApp, AiOutlineInstagram } from "react-icons/ai";
-import Logo from "../../resources/images/logo.png";
+import Logo from "../../resources/images/loogo.png";
 
 const Footer = () => {
   return (
@@ -26,7 +26,7 @@ const Footer = () => {
               </p>
             </div>
             <div className="falano">
-              <h2>ACHARYA ELECTRICS</h2>
+              <h2>RGB CREATION</h2>
               <h1>WANT TO CONTACT US</h1>
               <p>
                 If you have any inquiries, service requests, or need expert
