@@ -8,6 +8,13 @@ import Person3 from "../../resources/images/review3.jpeg";
 import Socket2 from "../../resources/images/contact.png";
 import { useForm } from "@formspree/react";
 import { Button, Form, Input, DatePicker, Rate, Select } from "antd";
+import Service1 from "../../extra/cinema.png";
+import Service2 from "../../extra/photo.jpg";
+import Service3 from "../../extra/short reels.png";
+import Service4 from "../../extra/wed-2.jpg";
+import Service5 from "../../extra/serial.jpeg";
+import Docss from "../../resources/images/docss.webp";
+import Icon from "../../resources/images/iccon.png";
 const { TextArea } = Input;
 
 const Home = () => {
@@ -60,10 +67,45 @@ const Home = () => {
             </div>
             <div className="service-grid">
               <div className="details topMargin">
-                {/* <ShowImage services={h?.image} url="uploads" /> */}
+                <img src={Service1} alt="s1" />
                 <div className="details-info">
-                  {/* <IconImage services={h?.icon} url="uploads" /> */}
-                  {/* <h2>{h?.title}</h2> */}
+                  <img src={Icon} alt="s1" />
+                  <h2>Cinema</h2>
+                </div>
+              </div>
+              <div className="details topMargin">
+                <img src={Service2} alt="s1" />
+                <div className="details-info">
+                  <img src={Icon} alt="s1" />
+                  <h2>Photography</h2>
+                </div>
+              </div>{" "}
+              <div className="details topMargin">
+                <img src={Service3} alt="s1" />
+                <div className="details-info">
+                  <img src={Icon} alt="s1" />
+                  <h2>Short Reels</h2>
+                </div>
+              </div>
+              <div className="details topMargin">
+                <img src={Service4} alt="s1" />
+                <div className="details-info">
+                  <img src={Icon} alt="s1" />
+                  <h2>Marriage Package</h2>
+                </div>
+              </div>
+              <div className="details topMargin">
+                <img src={Service5} alt="s1" />
+                <div className="details-info">
+                  <img src={Icon} alt="s1" />
+                  <h2>TV Serial Shooting</h2>
+                </div>
+              </div>
+              <div className="details topMargin">
+                <img src={Docss} alt="s1" />
+                <div className="details-info">
+                  <img src={Icon} alt="s1" />
+                  <h2>Documentary Films</h2>
                 </div>
               </div>
             </div>

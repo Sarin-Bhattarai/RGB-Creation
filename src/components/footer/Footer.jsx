@@ -50,7 +50,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link className="footer-links" to="/">
-                    Acharya Electrics
+                    RGB Creation
                   </Link>
                 </li>
                 <li>
