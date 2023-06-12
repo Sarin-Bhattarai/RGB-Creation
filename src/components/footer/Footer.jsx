@@ -98,7 +98,7 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h5>FOLLOW ACHARYA ELECTRICS</h5>
+              <h5>FOLLOW RGB CREATION</h5>
               <div className="flex topMargin">
                 <MdFacebook className="ii-c" size={28} />
                 <AiOutlineWhatsApp className="ii-c" size={28} />

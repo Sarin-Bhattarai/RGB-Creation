@@ -1,6 +1,6 @@
 import React from "react";
 import "./portfolio.css";
-import Portfolio2 from "../../resources/images/jjj.png";
+import Portfolio2 from "../../resources/images/yb.png";
 import Wave from "../../resources/images/wave.jpg";
 
 const Portfolio = () => {

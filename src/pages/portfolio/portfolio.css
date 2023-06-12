@@ -1,7 +1,7 @@
 .portfolio {
   height: 580px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
-    url("../../resources/images/pcover.png");
+    url("../../resources/images/grpp.png");
   background-size: cover;
   background-repeat: no-repeat;
 }

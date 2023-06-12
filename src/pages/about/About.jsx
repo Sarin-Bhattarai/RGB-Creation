@@ -13,8 +13,8 @@ const About = () => {
         <div className="aa-grid">
           <div className="heading">
             <h5>FAST ELECTRIC REPAIR</h5>
-            <h1>ACHARYA ELECTRICS</h1>
-            <h1>SINCE 2012</h1>
+            <h1>RGB Creation</h1>
+            <h1>SINCE 2018</h1>
             <p
               style={{
                 marginBottom: "20px",
